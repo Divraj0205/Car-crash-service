@@ -30,5 +30,5 @@ function draw() {
 	  }
 	}
 
-	text(mouseX+' '+mouseY,750,200);
+	
 }
