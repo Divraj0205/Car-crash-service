@@ -1,6 +1,6 @@
 var wall,car;
 var speed,weight;
-var deformation;
+
 
 
 function setup() {
@@ -18,17 +18,22 @@ function draw() {
 
 	if(wall.x-car.x < (wall.width+car.widht)/2){
 		car.velocityX=0;
-		deformation=0.5*weight*speed*speed/22500;
-		if(deformation>180){
-			car.shapeColor=color(225,0,0);
-		}
-		if(deformation>80&&deformation<180){
-			car.shapColor=color(230,230,0);
-		}
-		if(deformation<80){
-			car.shapColor=color(0,225,0);
-	  }
+		car.velocityY=0;
+		deformation();
 	}
 
 	text(mouseX+' '+mouseY,750,200);
+}
+   
+function deformation(){
+	var deformation=0.5*weight*speed*speed/22500;
+		if(deformation>180){
+			car.shapeColor="red";
+		}
+		if(deformation>80&&deformation<180){
+			car.shapColor="yellow";
+		}
+		if(deformation<80){
+			car.shapColor="green";
+	  }
 }
