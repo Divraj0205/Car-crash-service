@@ -33,5 +33,5 @@ function draw() {
   if(deformation<80){
     car.shapeColor=color(0,225,0);
   }
-	text(car.x,750,200);
+	//text(car.x,750,200);
 }
