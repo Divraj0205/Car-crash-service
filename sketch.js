@@ -26,7 +26,7 @@ function draw() {
   }
   if(deformation>180){
     car.shapeColor=color(225,0,0); 
-    fill(color(225,0,0)));
+    fill(color(225,0,0));
     textSize(100);
     text("Lethal for passengers",400,200);
 
