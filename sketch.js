@@ -40,7 +40,7 @@ function draw() {
   }
   if(deformation<80){
     car.shapeColor=color(0,225,0);
-    stroke("green");
+    fill("green");
     textSize(100);
     text("Save for passengers",450,200);
 
