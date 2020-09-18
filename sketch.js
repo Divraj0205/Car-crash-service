@@ -42,7 +42,7 @@ function draw() {
     car.shapeColor=color(0,225,0);
     fill("green");
     textSize(100);
-    text("Save for passengers",450,200);
+    text("Safe for passengers",450,200);
 
   }
 	//text(car.x,750,200);
