@@ -25,13 +25,25 @@ function draw() {
 		
   }
   if(deformation>180){
-    car.shapeColor=color(225,0,0);
+    car.shapeColor=color(225,0,0); 
+    stroke="white";
+    textSize(100);
+    text("Lethal for passengers",600,200);
+
   }
   if(deformation>80&&deformation<180){
     car.shapeColor=color(230,230,0);
+    stroke="white";
+    textSize(100);
+    text("Average",600,200);
+
   }
   if(deformation<80){
     car.shapeColor=color(0,225,0);
+    stroke="white";
+    textSize(100);
+    text("Save for passengers",600,200);
+
   }
 	//text(car.x,750,200);
 }
